@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import api from "../../services/api";
 
-export default function Login() {
+export default function Login({ history }) {
   const [email, setEmail] = useState("");
 
   async function handleSubmit(event) {
@@ -14,13 +14,15 @@ export default function Login() {
     const { _id } = response.data;
 
     localStorage.setItem("@AirCnc:user", _id);
+
+    history.push("/dashboard");
   }
 
   return (
     <>
       <p>
         Ofereça <strong>spots</strong> para programadores e encontre{" "}
-        <strong>talentos</strong> parasua empresa
+        <strong>talentos</strong> para sua empresa
       </p>
 
       <form onSubmit={handleSubmit}>
@@ -30,7 +32,7 @@ export default function Login() {
           id="email"
           placeholder="Seu melhor e-mail"
           value={email}
-          onchange={(event) => setEmail(event.target.value)}
+          onChange={(event) => setEmail(event.target.value)}
         />
 
         <button className="btn" type="submit">
