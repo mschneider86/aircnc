@@ -7,9 +7,7 @@ export default function Login({ history }) {
   async function handleSubmit(event) {
     event.preventDefault();
 
-    const response = await api.post("/sessions", {
-      email,
-    });
+    const response = await api.post("/sessions", { email });
 
     const { _id } = response.data;
 
@@ -26,10 +24,10 @@ export default function Login({ history }) {
       </p>
 
       <form onSubmit={handleSubmit}>
-        <label htmlFor="email">E-mail *</label>
+        <label htmlFor="email">E-MAIL *</label>
         <input
-          type="email"
           id="email"
+          type="email"
           placeholder="Seu melhor e-mail"
           value={email}
           onChange={(event) => setEmail(event.target.value)}

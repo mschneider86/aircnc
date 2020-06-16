@@ -1,9 +1,8 @@
-const user = require("../models/User");
 const User = require("../models/User");
 
 module.exports = {
-  async store(request, response) {
-    const { email } = request.body;
+  async store(req, res) {
+    const { email } = req.body;
 
     let user = await User.findOne({ email });
 
@@ -11,6 +10,6 @@ module.exports = {
       user = await User.create({ email });
     }
 
-    return response.json({ user });
+    return res.json(user);
   },
 };
