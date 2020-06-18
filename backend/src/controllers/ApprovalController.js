@@ -6,7 +6,7 @@ module.exports = {
   async store(request, response) {
     const { booking_id } = request.params;
 
-    const booking = await (await Booking.findById(booking_id)).populate("spot");
+    const booking = await Booking.findById(booking_id).populate("spot");
 
     booking.approved = true;
 
