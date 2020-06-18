@@ -12,6 +12,12 @@ module.exports = {
 
     await booking.save();
 
+    const socketBookingUser = request.connectedUsers[booking.user];
+
+    if (socketBookingUser) {
+      request.io.to(socketBookingUser).emit("booking_response", booking);
+    }
+
     return response.json(booking);
   },
 };
