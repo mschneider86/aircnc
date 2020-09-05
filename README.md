@@ -15,6 +15,7 @@
 
 <p align="center">
   <img alt="Frontend" src="assets_github/aircnc-web.gif" width="600px" height="400px">
+  <img alt="Mobile" style="margin-left:10px" src="assets_github/aircnc-m.gif" width="246px" height="400px">
 </p>
 
 ## :rocket: Tecnologias
