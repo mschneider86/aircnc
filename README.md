@@ -26,7 +26,7 @@
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
-  <a href="#desenvolvimento">Desenvolvimento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
+  <a href="#running">Running</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
 </p>
 
 <p >
@@ -34,9 +34,9 @@
   <img alt="Mobile" style="margin-left:10px" src="assets_github/aircnc-m.gif" width="226px" height="380px">
 </p>
 
-## :rocket: Tecnologias
+## :rocket: Technologies
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with the following technologies:
 
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org)
@@ -45,29 +45,29 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Aircnc é um projeto que visa conectar empresas que querem abrir spots e desenvolvedores que procuram um lugar para trocar ideias com devs, conhecer a empresa e trabalhar lá por um período.
+The Aircnc is a project to connect companies that want to rent spots and developers who are looking for proffesionals to interact with, get in touch with tech companies and/or get a part time job.
 
 ## 🔖 Layout
 
-Você pode baixar o layout do projeto no formato `.sketch` através [desse link](https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/semana-omnistack/aircnc.sketch).
+You can download the project's layout (`.sketch`) on [this link](https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/semana-omnistack/aircnc.sketch).
 
-Para abrir o arquivo no formato `.sketch` em qualquer sistema operacional utilize a ferramenta [Zeplin](https://zeplin.io).
+To open the file, on any O.S. use the tool [Zeplin](https://zeplin.io).
 
-## Desenvolvimento
+## Running
 
-Para rodar a aplicação servidor
+To run the backend
 
 ```shell
 $ yarn run dev
 ```
 
-Para rodar a aplicação web
+To run the web application
 
 ```shell
 $ yarn start
 ```
 
-Para rodar a aplicação mobile
+To run the mobile application
 
 ```shell
 $ yarn start
